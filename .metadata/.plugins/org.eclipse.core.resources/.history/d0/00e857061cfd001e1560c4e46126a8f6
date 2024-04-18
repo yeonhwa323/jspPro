@@ -1,0 +1,58 @@
+<%@ page contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/jspPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/jspPro/resources/cdn-main/example.css">
+<script src="/jspPro/resources/cdn-main/example.js"></script>
+<style>
+ span.material-symbols-outlined{
+    vertical-align: text-bottom;
+ }
+</style>
+</head>
+<body>
+<header>
+  <h1 class="main"><a href="#" style="position: absolute;top:30px;">yeon HOme</a></h1>
+  <ul>
+    <li><a href="#">로그인</a></li>
+    <li><a href="#">회원가입</a></li>
+  </ul>
+</header>
+<h3>
+  <span class="material-symbols-outlined">view_list</span> jsp days00
+</h3>
+<div>
+  <xmp class="code">
+      1. JSP/Servlet ? Java 웹 기술
+       ㄱ. Servlet - 먼저나옴.
+       ㄴ. JSP - Servlet 다음 나옴.
+      2. JSP = Java Server Page
+            자바 언어 + 서버에서 실행되는 페이지
+      3. 처리 과정
+      클(브라우저) -> ??.jsp 요청 -> 웹서버(아파치) -> WAS(웹 어플리케이션 서버)
+      												   [톰캣],웹로직,제티,JBoss 등등
+      												   [웹 컨테이너]박스안에서 자바 객체 생성
+      												   [웹 컨테이너 = 자바 객체 생성]
+      					응답						<-
+      
+      4. 톰캣 9.0.XX -> 톰캣에 따라 나머지 버전들도 달라진다.
+      	JSP 2.3
+      	Servlet 4.0
+      	EL 3.0
+      	WebSocket 1.1
+      
+      5.      
+                  
+                  
+  </xmp>  
+</div>
+
+<script>
+</script>
+</body>
+</html>
