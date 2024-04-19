@@ -16,8 +16,9 @@
 </style>
 </head>
 <body>
+
 <header>
-  <h1 class="main"><a href="#" style="position: absolute;top:30px;">yeon HOme</a></h1>
+  <h1 class="main"><a href="#" style="position: absolute;top:30px;">kenik HOme</a></h1>
   <ul>
     <li><a href="#">로그인</a></li>
     <li><a href="#">회원가입</a></li>
@@ -28,31 +29,27 @@
 </h3>
 <div>
   <xmp class="code">
-    
-    [MVC 패턴 프로젝트]
-    					[로직처리부분]			  [출력처리부분]
-    /scott/dept 요청 -> DB select 로직처리      -> dept.jsp
-    					서블릿
-    					ArrayList<DeptVO> list
-    					포워딩    					
-    					ScottDept.java
-    					
-     [days01.ex06_02.jsp 참조]
-     
-     ex12_dept.jsp
-     부서 옵션을 하나 선택 
-     	-> /scott/emp?deptno=10  요청 URL
-     	  -> /scott/emp -> 서블릿 클래스 ScottEmp.java
-     	    -> ex12_emp.jsp 포워딩 
-  </xmp>   
-  
-  <a href="/jspPro/scott/dept">부서 정보 조회</a>
-  <br>
-  
+	  http://localhost/jspPro/days02/ex01_ok_02.jsp
+	  ?
+	  empno=7521&empno=7698&empno=7844
+  </xmp> 
 </div>
 
-<script>
+<p id="demo">
+  <ul>
+    <%    
+      String [] empnos = request.getParameterValues("empno");
+      for(int i=0; i<empnos.length; i++){
+      %><li><%= empnos[i] %></li><%   	   
+           }
+     %>
+  </ul>
+</p>
 
+<script>
+   // <input type="text" data-loc="seoul">
+   // jquery  $(":text").data("loc")
+   //         $(":text").data("loc","busan"); 
 </script>
 </body>
 </html>
@@ -64,6 +61,4 @@
 
 
 
-
-
-
+ 

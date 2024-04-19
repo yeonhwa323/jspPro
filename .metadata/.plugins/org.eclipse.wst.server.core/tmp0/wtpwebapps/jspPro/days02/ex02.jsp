@@ -39,7 +39,7 @@
   	**** [URL 패턴 매핑 규칙] ****  <url-pattern>
   	1. / 만 사용가능  ex) <!-- <url-pattern>/</url-pattern>  -->
   		웹 사이트(어플리케이션)에서 모든 요청의
-  		사용되는 기본 서플릿으로 매핑하겠다. // 모든요청은 컨트롤러가 받는다.
+  		사용되는 기본 서플릿으로 매핑하겠다. ( 모든요청은 컨트롤러가 받는다.)
   		
   	2. / 시작 ~ /* 종료
   	
@@ -64,7 +64,7 @@
   <a href="/jspPro/days03/board/detail">/days03/board/detail 요청</a>
   <br>
   
-  <a href="/jspPro/days03/board/write.htm">/days03/board/write.htm 요청</a>
+  <a href="/jspPro/write.htm">/write.htm 요청</a>
   <br>
   <a href="/jspPro/days03/board/list.htm">/days03/board/list.htm 요청</a>
   <br>

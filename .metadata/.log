@@ -903,3 +903,6 @@ class org.eclipse.jdt.core.dom.Block: {
 
 !ENTRY org.eclipse.wst.server.core 4 0 2024-04-19 09:47:42.976
 !MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2024-04-19 17:31:04.887
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
