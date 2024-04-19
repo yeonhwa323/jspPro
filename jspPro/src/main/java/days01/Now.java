@@ -15,20 +15,22 @@ public class Now extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		super.doGet(req, resp);
 	}
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		super.doPost(req, resp);
 	}
 
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		//contentType="text/html; charset=EUC-KR"
+		// UTF-8이랑 같은 의미 내용 빼먹음....
+		resp.setContentType("text/html;charset=UTF-8"); 
+		
 		Date now =new Date();
-		// 출력 형식
+		// 출력 형식 2023-10-24 10:05:43
 		String pattern = "yyyy-MM-dd hh:mm:ss";
 		SimpleDateFormat sdf = new SimpleDateFormat(pattern);
 		String strNow = sdf.format(now);
