@@ -52,6 +52,7 @@
 					</tr>
 				</thead>
 				<tbody>
+				
 		<%
 		  	    if( list == null ){
 		%>
@@ -80,6 +81,8 @@
 		  	    
 		  	    } // if
 	  	%>
+	  	
+		
 				</tbody>
 				<tfoot>
 					<tr>

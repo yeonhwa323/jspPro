@@ -21,3 +21,26 @@
 4월 19, 2024 17:33:51.718 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
 4월 19, 2024 17:33:58.780 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
 4월 19, 2024 17:39:20.454 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 19, 2024 17:42:16.46 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 19, 2024 17:47:23.611 [9976:12724:0419/174723.610:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+4월 22, 2024 09:01:26.895 NEW SESSION
+4월 22, 2024 09:01:26.895 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 22, 2024 09:19:51.537 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 22, 2024 09:35:34.887 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 22, 2024 09:37:59.53 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 22, 2024 09:39:26.795 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 22, 2024 09:49:25.314 [11828:11840:0422/094925.313:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 22, 2024 09:49:25.314 [11828:11840:0422/094925.313:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 22, 2024 09:59:28.212 [11828:11840:0422/095928.212:ERROR:interface_endpoint_client.cc(707)] Message 5 rejected by interface blink.mojom.WidgetHost
+4월 22, 2024 09:59:59.883 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 22, 2024 10:51:43.689 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 22, 2024 10:57:28.886 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 22, 2024 11:18:06.288 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 22, 2024 11:18:14.536 [3036:13796:0422/111814.536:ERROR:get_updates_processor.cc(263)] PostClientToServerMessage() failed during GetUpdates with error Network error (ERR_ABORTED)
+4월 22, 2024 11:18:19.101 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 22, 2024 12:47:02.361 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 22, 2024 13:46:44.223 [16244:7208:0422/134644.222:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 22, 2024 13:59:37.847 [16244:7208:0422/135937.846:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+4월 22, 2024 16:49:03.622 [16244:3504:0422/164903.622:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+4월 22, 2024 16:49:03.622 [16244:3504:0422/164903.622:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
