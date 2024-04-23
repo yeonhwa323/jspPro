@@ -1,7 +1,5 @@
 package days04.board.domain;
 
-
-
 import java.util.Date;
 
 import lombok.AllArgsConstructor;

@@ -44,3 +44,30 @@
 4월 22, 2024 13:59:37.847 [16244:7208:0422/135937.846:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
 4월 22, 2024 16:49:03.622 [16244:3504:0422/164903.622:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
 4월 22, 2024 16:49:03.622 [16244:3504:0422/164903.622:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+4월 23, 2024 08:41:20.65 NEW SESSION
+4월 23, 2024 08:41:20.65 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 23, 2024 09:32:30.30 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 23, 2024 11:21:28.40 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 23, 2024 11:27:48.948 [9548:8324:0423/112748.948:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 23, 2024 12:36:45.431 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 23, 2024 13:19:02.833 [6476:14732:0423/131902.832:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 23, 2024 13:58:13.66 [6476:14732:0423/135813.058:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+
+4월 23, 2024 14:22:56.970 NEW SESSION
+4월 23, 2024 14:22:56.970 [7620:15140:0423/142256.969:ERROR:persistent_memory_allocator.cc(902)] Corruption detected in shared-memory segment.
+4월 23, 2024 14:22:58.319 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 23, 2024 14:23:37.182 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 23, 2024 14:37:51.241 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 23, 2024 14:42:04.21 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 23, 2024 14:53:56.750 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 23, 2024 14:55:56.599 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 23, 2024 14:57:09.708 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 23, 2024 14:59:10.78 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 23, 2024 15:14:44.806 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 23, 2024 15:17:04.88 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 23, 2024 16:00:50.765 [12784:2516:0423/160050.765:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 23, 2024 16:00:50.766 [12784:2516:0423/160050.765:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 23, 2024 16:51:52.367 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 23, 2024 17:12:35.493 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 23, 2024 17:36:18.711 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.

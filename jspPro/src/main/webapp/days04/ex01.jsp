@@ -48,7 +48,11 @@
       
       게시판 목록 보기 : List.java, list.jsp    검색기능 X, 페이징처리 X
       게시판 글 쓰기 : Write.java, write.jsp
-       
+      
+      게시판 조회수 증가 방지 : https://parkadd.tistory.com/115
+      
+      페이징 처리
+      
   </xmp>  
   
 </div>

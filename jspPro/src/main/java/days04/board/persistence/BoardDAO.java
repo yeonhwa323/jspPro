@@ -36,11 +36,17 @@ public interface BoardDAO {
 			, int currentPage, int numberPerpage) throws SQLException;
 	
 	// 총 레코드 수
-		int getTotalRecords(  ) throws SQLException;
+	int getTotalRecords(  ) throws SQLException;
 	// 총 페이지 수 반환하는 메서드
-		int getTotalPages( int numberPerPage ) throws SQLException;
+	int getTotalPages( int numberPerPage ) throws SQLException;
 	// 검색된 총 페이지 수 
-		int getTotalPages(int numberPerpage, int searchCondition, String searchWord) throws SQLException;
+	int getTotalPages(int numberPerpage, int searchCondition, String searchWord) throws SQLException;
+	
+		
+	// 해당 게시글의 비밀번호를 반환하는 메서드
+	String getOriginalPwd(int seq) throws SQLException;
+	
+	
 	
 }//interface
 

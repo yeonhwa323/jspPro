@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.util.DBConn;
 
 import days04.board.domain.BoardDTO;
+import days04.board.domain.PageDTO;
 import days04.board.persistence.BoardDAOImpl;
 
 /**
@@ -32,26 +33,56 @@ public class List extends HttpServlet {
 	// list.htm 요청할 때? currentpage=3
 	protected void doGet(HttpServletRequest request
 			, HttpServletResponse response) throws ServletException, IOException {
-		int currentpage = 1; // 현재 페이지 번호
-		int numberPerPage = 10; // 한 페이지에 출력할 게시글 수
-		
+		int currentPage = 1; // 현재 페이지 번호
+		int numberPerPage = 20; // 한 페이지에 출력할 게시글 수		
 		int numberOfPageBlock = 10; // [1] 2 3 4 5 6 7 8 9 10 >
 		int totalRecords = 0; // 총 레코드수
 		int totalPages = 0;   // 총 페이지수
 		
+		// 검색 파라미터 시작
+		int searchCondition = 1;
+		
 		try {
-			currentpage = Integer.parseInt( request.getParameter("currentpage") );
-		} catch (Exception e) {
-			
+			searchCondition = Integer.parseInt( request.getParameter("searchCondition") );
+		} catch (Exception e) {			
+		}
+		
+		String searchWord = request.getParameter("searchWord");   // 만약, null 이면 검색 안하겠다는의미
+		// 검색 파라미터 끝
+		
+		
+		try {
+			currentPage = Integer.parseInt( request.getParameter("currentPage") );
+		} catch (Exception e) {			
 		}
 		
 		// [검색기능 + 페이징 처리]
 		Connection conn = DBConn.getConnection();
 		BoardDAOImpl dao = new BoardDAOImpl(conn);
 		ArrayList<BoardDTO> list = null; 
+		PageDTO pDto = null;
 		
 		try {
-			list = dao.select(currentpage, numberPerPage);
+			
+			if (searchWord == null || searchWord.equals("") ) { // 검색X 
+				list = dao.select(currentPage, numberPerPage);
+				// totalRecords = dao.getTotalRecords();
+				totalPages = dao.getTotalPages(numberPerPage);				
+				
+			} else { // 검색할 때				
+				list = dao.search(
+						searchCondition, searchWord
+						, currentPage, numberPerPage);
+				
+				totalPages = dao.getTotalPages(
+						numberPerPage
+						, searchCondition, searchWord);
+						
+			} // if
+			
+			pDto = new PageDTO(currentPage, numberPerPage
+					, numberOfPageBlock, totalPages);
+			
 		} catch (SQLException e) {
 			System.out.println("> List.doGet() Exception...");
 			e.printStackTrace();
@@ -60,6 +91,7 @@ public class List extends HttpServlet {
 		
 		// 1. 
 		request.setAttribute("list", list);
+		request.setAttribute("pDto", pDto);
 		
 		// 2. 포워딩
 		String path = "/days04/board/list.jsp";

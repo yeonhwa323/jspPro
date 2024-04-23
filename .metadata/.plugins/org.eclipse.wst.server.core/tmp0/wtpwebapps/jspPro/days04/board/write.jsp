@@ -68,8 +68,10 @@ span.material-symbols-outlined {
 				</tr>
 				<tr>
 					<td align="center">HTML</td>
-					<td><input type="radio" name="tag" value="1" checked>적용
-						<input type="radio" name="tag" value="0">비적용</td>
+					<td>
+						<input type="radio" name="tag" value="1" checked>적용
+						<input type="radio" name="tag" value="0">비적용
+					</td>
 				</tr>
 				<tr>
 					<td colspan="2" align="center">
