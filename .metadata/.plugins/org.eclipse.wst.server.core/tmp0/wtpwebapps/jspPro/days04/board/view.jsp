@@ -70,11 +70,13 @@ span.material-symbols-outlined {
 			<tfoot>
 				<tr>
 					<td colspan="4" align="center">
-						<a	href="<%= contextPath %>/cstvsboard/edit.htm?seq=${ dto.seq }">수정하기</a>
-						<a	href="<%= contextPath %>/cstvsboard/delete.htm?seq=${ dto.seq }">삭제하기</a>
-						<input type="button" id="btnModalDelete" value="모달 삭제" /> 
-						<a href="<%= contextPath %>/cstvsboard/list.htm">Home</a>
-					</td>
+        			<%-- <c:if test="false"> --%>
+          			<a href="<%= contextPath %>/cstvsboard/edit.htm?seq=${dto.seq}">수정하기</a>
+          			<a href="<%= contextPath %>/cstvsboard/delete.htm?seq=${dto.seq}">삭제하기</a>
+        			<%-- </c:if>  --%> 
+          			<input type="button" id="btnModalDelete" value="모달 삭제">
+          			<a href="<%= contextPath %>/cstvsboard/list.htm">HOme</a> 
+        			</td>
 				</tr>
 			</tfoot>
 
@@ -115,12 +117,10 @@ span.material-symbols-outlined {
     height: 400,
     width: 350,
     modal: true,
-    buttons: {
-    	
-    },
-    /* close: function() {
-      form[ 0 ].reset();      
-    } */
+    buttons: {},
+    close: function() {
+      form[ 0 ].reset();
+    }
   });  
 	
 	$("#btnModalDelete").on("click", function(){
@@ -139,19 +139,17 @@ span.material-symbols-outlined {
 	     $("#spn").show().slideToggle(3000);
 	   }
 	
-	// 예) writer = 권맑음 검색  1  [2]페이지의 57게시글을 클릭한 후
-	//     view.jsp -> Home 버튼을 클릭할 때
-	// 
-	$("tfoot a:last-of-type").attr("href", function(index, oldHref){
-		return    `\${oldHref}?currentpage=${param.currentpage}&searchCondition=${param.searchCondition}&searchWord=${param.searchWord}`;
-	});
-	
-	// 삭제 후 검색결과의 페이지로 이동.
-	  $("#dialog-form form").attr("action"
-			  , function (index, oldHref){
-	     return `\${oldHref}&currentpage=${param.currentpage}&searchCondition=${param.searchCondition}&searchWord=${param.searchWord}`;
+	// 예)  writer = 권맑음 검색   1  [2]  의    57게시글을 클릭한 후
+	  //      view.jsp ->  Home 버튼을 클릭할 때 
+	  // 
+	  $("tfoot a:last-of-type").attr("href", function (index, oldHref){
+		  return 	`\${oldHref}?currentpage=${param.currentpage}&searchCondition=${param.searchCondition}&searchWord=${param.searchWord}`;
 	  });
-	
-</script>
-</body>
-</html>
+	  
+	  // 삭제 후 검색결과의 페이지로 이동.
+	  $("#dialog-form form").attr("action", function (index, oldHref){
+		  return 	`\${oldHref}&currentpage=${param.currentpage}&searchCondition=${param.searchCondition}&searchWord=${param.searchWord}`;
+	  });
+	</script>
+	</body>
+	</html>

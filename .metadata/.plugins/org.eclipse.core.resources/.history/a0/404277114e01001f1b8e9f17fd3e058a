@@ -139,17 +139,19 @@ span.material-symbols-outlined {
 	     $("#spn").show().slideToggle(3000);
 	   }
 	
-	// 예)  writer = 권맑음 검색   1  [2]  의    57게시글을 클릭한 후
-	  //      view.jsp ->  Home 버튼을 클릭할 때 
-	  // 
-	  $("tfoot a:last-of-type").attr("href", function (index, oldHref){
-		  return 	`\${oldHref}?currentpage=${param.currentpage}&searchCondition=${param.searchCondition}&searchWord=${param.searchWord}`;
+	// 예) writer = 권맑음 검색  1  [2]페이지의 57게시글을 클릭한 후
+	//     view.jsp -> Home 버튼을 클릭할 때
+	// 
+	$("tfoot a:last-of-type").attr("href", function(index, oldHref){
+		return    `\${oldHref}?currentpage=${param.currentpage}&searchCondition=${param.searchCondition}&searchWord=${param.searchWord}`;
+	});
+	
+	// 삭제 후 검색결과의 페이지로 이동.
+	  $("#dialog-form form").attr("action"
+			  , function (index, oldHref){
+	     return `\${oldHref}&currentpage=${param.currentpage}&searchCondition=${param.searchCondition}&searchWord=${param.searchWord}`;
 	  });
-	  
-	  // 삭제 후 검색결과의 페이지로 이동.
-	  $("#dialog-form form").attr("action", function (index, oldHref){
-		  return 	`\${oldHref}&currentpage=${param.currentpage}&searchCondition=${param.searchCondition}&searchWord=${param.searchWord}`;
-	  });
-	</script>
-	</body>
-	</html>
+	
+</script>
+</body>
+</html>
