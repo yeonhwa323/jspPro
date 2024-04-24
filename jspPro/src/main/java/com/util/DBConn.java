@@ -23,8 +23,7 @@ public class DBConn {
 			
 			try {
 				Class.forName(className);
-				conn = DriverManager.getConnection(url, user, password);
-				
+				conn = DriverManager.getConnection(url, user, password);				
 			} catch (ClassNotFoundException e) {
 				e.printStackTrace();
 			} catch (SQLException e) {

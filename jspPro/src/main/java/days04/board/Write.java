@@ -66,6 +66,7 @@ public class Write extends HttpServlet {
       response.sendRedirect(location);
       
    }
+   
 
 }
 

@@ -1090,3 +1090,9 @@
 0:0:0:0:0:0:0:1 - - [23/Apr/2024:17:36:16 +0900] "GET /jspPro/days04/ex01.jsp HTTP/1.1" 200 1751
 0:0:0:0:0:0:0:1 - - [23/Apr/2024:17:36:19 +0900] "GET /jspPro/cstvsboard/list.htm HTTP/1.1" 200 9137
 0:0:0:0:0:0:0:1 - - [23/Apr/2024:17:36:22 +0900] "GET /jspPro/cstvsboard/view.htm?seq=161&currentpage=&searchCondition=&searchWord= HTTP/1.1" 200 3999
+192.168.10.171 - - [23/Apr/2024:17:42:19 +0900] "GET /jspPro/cstvsboard/list.htm HTTP/1.1" 200 9137
+192.168.10.171 - - [23/Apr/2024:17:42:19 +0900] "GET /jspPro/resources/cdn-main/example.css HTTP/1.1" 200 14742
+192.168.10.171 - - [23/Apr/2024:17:42:19 +0900] "GET /jspPro/resources/cdn-main/example.js HTTP/1.1" 200 4612
+192.168.10.171 - - [23/Apr/2024:17:42:24 +0900] "GET /jspPro/cstvsboard/write.htm HTTP/1.1" 200 2395
+192.168.10.171 - - [23/Apr/2024:17:42:54 +0900] "POST /jspPro/cstvsboard/write.htm HTTP/1.1" 302 -
+192.168.10.171 - - [23/Apr/2024:17:42:54 +0900] "GET /jspPro/cstvsboard/list.htm?write=success HTTP/1.1" 200 9147
