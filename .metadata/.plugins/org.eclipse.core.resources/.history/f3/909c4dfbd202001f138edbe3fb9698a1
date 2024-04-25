@@ -1,0 +1,30 @@
+package days06.mvc.command;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.util.ConnectionProvider;
+
+import days06.mvc.domain.BoardDTO;
+import days06.mvc.domain.PageDTO;
+import days06.mvc.persistence.BoardDAOImpl;
+
+
+// view.do(상세보기) -> [M]VC
+public class ViewHandler implements CommandHandler{
+
+	@Override
+	public String process(HttpServletRequest request, HttpServletResponse response)
+			throws Exception {
+		
+		System.out.println("> ViewHandler.process()...");
+		 
+		return "/days06/board/list.jsp"; // "list.jsp"
+	}
+
+
+}

@@ -1,0 +1,41 @@
+package days06.mvc.command;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.util.ConnectionProvider;
+import com.util.DBConn;
+
+import days06.mvc.domain.BoardDTO;
+import days06.mvc.persistence.BoardDAOImpl;
+
+
+public class DeleteHandler implements CommandHandler {
+
+	@Override
+	public String process(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		String method = request.getMethod();  // GET  POST
+		
+		if ( method.equals("GET")) { // Edit.java  doGet() 복사+붙이기
+			long pseq = Long.parseLong(request.getParameter("seq"));
+			
+			// 2. 포워딩
+			String path = "/days04/board/delete.jsp";
+		    RequestDispatcher dispatcher = request.getRequestDispatcher(path);
+		    dispatcher.forward(request, response);
+		    
+			return "/days06/board/edit.jsp";
+		} else {  // Edit.java  doPost() 복사+붙이기
+			
+		      
+		} // if
+		
+		return null;
+	}
+	
+}

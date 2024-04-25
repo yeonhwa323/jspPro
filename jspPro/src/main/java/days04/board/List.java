@@ -21,7 +21,7 @@ import days04.board.persistence.BoardDAOImpl;
 /**
  * Servlet implementation class List
  */
-@WebServlet("/cstvsboard/list.htm")
+//@WebServlet("/cstvsboard/list.htm")
 public class List extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -52,7 +52,7 @@ public class List extends HttpServlet {
 		
 		
 		try {
-			currentPage = Integer.parseInt( request.getParameter("currentPage") );
+			currentPage = Integer.parseInt( request.getParameter("currentpage") );
 		} catch (Exception e) {			
 		}
 		

@@ -36,14 +36,14 @@
   	 	등등 
   	 4. 서버와 관련된 정보도 얻어올 수 있다.
   </xmp>
-<!--   
-  [암기]
+ 
+  [암기]<br>
 *** 1. contextPath(컨텍스트 루트) : /jspPro
 *** 2. 클라이언트 IP 주소 : 0:0:0:0:0:0:0:1
 *** 3. 요청 전송 방식 : GET
 *** 4. 요청 URL : http://localhost/jspPro/days02/ex05.jsp
 *** 5. 요청 URI : /jspPro/days02/ex05.jsp
-   -->
+
    
    
   [암기] <br>

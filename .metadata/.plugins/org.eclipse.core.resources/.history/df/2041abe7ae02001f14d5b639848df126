@@ -1,0 +1,7 @@
+package days06.mvc.command;
+
+public interface CommandHandler {
+	
+	process();
+	
+}
