@@ -105,3 +105,12 @@
 4월 25, 2024 13:58:29.833 [5940:11456:0425/135829.833:ERROR:persistent_memory_allocator.cc(903)] Corruption detected in shared-memory segment.
 4월 25, 2024 13:58:30.252 Created TensorFlow Lite XNNPACK delegate for CPU.
 4월 25, 2024 15:22:35.535 [5940:5988:0425/152235.535:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+4월 26, 2024 08:26:03.548 NEW SESSION
+4월 26, 2024 08:26:03.548 Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 26, 2024 08:56:20.827 [11888:1936:0426/085620.827:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 26, 2024 08:59:24.962 [11888:1936:0426/085924.962:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+
+4월 26, 2024 16:41:39.766 NEW SESSION
+4월 26, 2024 16:41:39.766 Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 26, 2024 16:42:42.965 Created TensorFlow Lite XNNPACK delegate for CPU.

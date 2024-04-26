@@ -38,7 +38,7 @@
      5. EL 의 기능
      	1) JSP 4가지 기본 영역(scope)
      								EL 내장 객체
-     								 ${ } 
+     								 <%-- ${ } --%> 
      		page scope				=> pageContext
      		request scope			   requestScope
      		session scope			   sessionScope

@@ -1,0 +1,5 @@
+package days07.guestbook.command;
+
+public class CommandHandler {
+
+}
