@@ -3,7 +3,7 @@ package days07.guestbook.command;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import sample.guestbook.service.DeleteMessageService;
+import days07.guestbook.service.DeleteMessageService;
 
 public class DeleteMessageHandler implements CommandHandler{
 

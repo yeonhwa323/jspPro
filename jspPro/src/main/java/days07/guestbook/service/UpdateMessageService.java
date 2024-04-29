@@ -5,8 +5,8 @@ import java.sql.Connection;
 import com.util.ConnectionProvider;
 import com.util.JdbcUtil;
 
-import sample.guestbook.domain.Message;
-import sample.guestbook.persistence.MessageImpl;
+import days07.guestbook.domain.Message;
+import days07.guestbook.persistence.MessageImpl;
 
 public class UpdateMessageService {
 	

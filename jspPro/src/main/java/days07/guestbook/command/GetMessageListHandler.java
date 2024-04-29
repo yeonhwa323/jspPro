@@ -3,8 +3,8 @@ package days07.guestbook.command;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import sample.guestbook.service.GetMessageListService;
-import sample.guestbook.service.MessageListView;
+import days07.guestbook.service.GetMessageListService;
+import days07.guestbook.service.MessageListView;
 
 public class GetMessageListHandler implements CommandHandler{
 
@@ -24,7 +24,7 @@ public class GetMessageListHandler implements CommandHandler{
 
 		request.setAttribute("viewData", viewData);  
 
-		return "/sample/guestbook/list.jsp";  // 포워딩
+		return "/days07/guestbook/list.jsp";  // 포워딩
 	}
 
 }

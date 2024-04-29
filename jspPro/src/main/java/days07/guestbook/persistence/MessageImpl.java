@@ -9,7 +9,7 @@ import java.util.List;
 
 import com.util.JdbcUtil;
 
-import sample.guestbook.domain.Message;
+import days07.guestbook.domain.Message;
 
 // DAO 싱글톤 구현
 public class MessageImpl  implements IMessage{

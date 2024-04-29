@@ -46,7 +46,7 @@ a:hover {
 <hr>
 
 <div id="write_box" style="display: none;">	
-	<form action="/jspPro/sample/guestbook/write.do" method="post">
+	<form action="/jspPro/days07/guestbook/write.do" method="post">
 		<div
 			style="text-align:center;border: solid 1px gray; width: 270px; margin: 0 auto; padding: 10px">
 			<h3>방명록<span class="glyphicon glyphicon-heart-empty"></span></h3>

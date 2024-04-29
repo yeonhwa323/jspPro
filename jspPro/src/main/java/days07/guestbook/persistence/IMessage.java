@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
-import sample.guestbook.domain.Message;
+import days07.guestbook.domain.Message;
 
 public interface IMessage {    
 

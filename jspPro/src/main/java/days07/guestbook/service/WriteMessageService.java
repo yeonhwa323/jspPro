@@ -5,8 +5,8 @@ import java.sql.SQLException;
 
 import com.util.ConnectionProvider;
 
-import sample.guestbook.domain.Message;
-import sample.guestbook.persistence.MessageImpl;
+import days07.guestbook.domain.Message;
+import days07.guestbook.persistence.MessageImpl;
 
 
 public class WriteMessageService {

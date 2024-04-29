@@ -3,9 +3,9 @@ package days07.guestbook.command;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import sample.guestbook.domain.Message;
-import sample.guestbook.service.GetMessageListService;
-import sample.guestbook.service.UpdateMessageService;
+import days07.guestbook.domain.Message;
+import days07.guestbook.service.GetMessageListService;
+import days07.guestbook.service.UpdateMessageService;
 
 //       update.do?messageId=3
 public class UpdateMessageHandler  implements CommandHandler{
@@ -21,7 +21,7 @@ public class UpdateMessageHandler  implements CommandHandler{
 			int messageId = Integer.parseInt(request.getParameter("messageId") );
 			Message msg = messageService.getMessage(messageId );
 			request.setAttribute("msg", msg);
-			return "/sample/guestbook/update.jsp";  // 포워딩.
+			return "/days07/guestbook/update.jsp";  // 포워딩.
 			
 		}else if(request.getMethod().equalsIgnoreCase("POST")) {			
 			 

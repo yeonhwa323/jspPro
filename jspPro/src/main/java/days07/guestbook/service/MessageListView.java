@@ -1,7 +1,8 @@
 package days07.guestbook.service;
 
 import java.util.List;
-import sample.guestbook.domain.Message; 
+
+import days07.guestbook.domain.Message; 
 
 
 public class MessageListView { 

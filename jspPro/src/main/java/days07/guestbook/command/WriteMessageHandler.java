@@ -3,8 +3,8 @@ package days07.guestbook.command;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import sample.guestbook.domain.Message;
-import sample.guestbook.service.WriteMessageService;
+import days07.guestbook.domain.Message;
+import days07.guestbook.service.WriteMessageService;
 
 public class WriteMessageHandler implements CommandHandler{
 
