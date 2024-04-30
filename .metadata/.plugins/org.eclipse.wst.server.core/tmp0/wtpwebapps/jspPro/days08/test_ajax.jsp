@@ -28,11 +28,10 @@
 			Date hiredate = rs.getDate("hiredate");
 			double sal = rs.getDouble("sal");
 			double comm = rs.getDouble("comm");
-			responseText +=
-					String.format("<tr>%d %s %s %d %t %f %f </tr>"
-							, empno, ename, job, mgr, hiredate, sal, comm);
+			/* responseText +=
+					String.format("<tr>%d\t %s\t %s\t %d\t %t\t %f\t %f\t </tr>"
+							, empno, ename, job, mgr, hiredate, sal, comm); */
 		}
-		
 		
 	} catch (Exception e) {
 		e.printStackTrace();

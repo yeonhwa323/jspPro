@@ -34,24 +34,8 @@
 	  <dispatcher>REQUEST</dispatcher>
 	</filter-mapping>
 	
-	<!-- 3.  컨트롤러 서블릿 등록 -->
-	<servlet>
-	  <description>sample 방명록 MVC  컨트롤러 등록</description>
-	  <servlet-name>dispatcher</servlet-name>
-	  <servlet-class>days07.guestbook.controller.DispatcherServlet</servlet-class>
-	  <init-param>
-	     <description>요청URL과 Handler 매핑 정보를 가지고 있는 파일의 경로</description>
-	     <param-name>path</param-name>
-	     <param-value>/days07/guestbook/commandHandler.properties</param-value>
-	  </init-param>
-	  <load-on-startup>1</load-on-startup>	  
-	</servlet>
-	<servlet-mapping>
-	  <servlet-name>dispatcher</servlet-name>
-	  <!-- <url-pattern>/</url-pattern> -->
-	  <url-pattern>*.do</url-pattern>
-	</servlet-mapping>
-		
+	
+	
 </web-app>
 
 

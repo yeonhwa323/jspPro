@@ -39,7 +39,7 @@
 			double sal = rs.getDouble("sal");
 			responseText +=
 					String.format("<li>[%d] %d %s\t\t(%.2f)</li>"
-							, rank, empno, ename, sal);
+							, rank, empno, ename, sal);			
 		}//while
 	} catch(Exception e){
 		e.printStackTrace();
