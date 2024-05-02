@@ -28,28 +28,41 @@
   <span class="material-symbols-outlined">view_list</span> jsp days00
 </h3>
 <div>
+	<a href="/jspPro/product/list.ss">상품 목록보기</a>
+	<br>
+
   <xmp class="code">
    days09.ex05 과제...
       
    과제....
  1. 상품테이블 / 상품이미지테이블 생성 , 시퀀스 생성
- --상품테이블
- create table pd_tbl (
-    pd_code   number(50)  primary key, -- 상품코드
-    pd_name varchar2(50)    not null,    -- 상품명
-    pd_docu varchar2(100)    not null    -- 상품설명
+--상품테이블
+create table pd_tbl (
+    pdCode number(30)  primary key, -- 상품코드
+    pdName varchar2(50)    not null,    -- 상품명
+    pdDocu varchar2(100)    not null    -- 상품설명
  );
- -- 상품이미지테이블
- create table pd_img (
-    pd_img_num  number   primary key,        -- 순번
-    pd_code number(50) ,
-    origin_img_name varchar2(100) not null,     -- 원래이미지명
-    file_img_name  varchar2(100)  not null,       -- 파일이미지명
-    constraint pd_code foreign key(pd_code) references pd_tbl(pd_code) -- 상품코드
+-- 상품이미지테이블
+create table pd_img (
+    pdNum  number   primary key,        -- 순번
+    pdCode number(30) ,
+    origin_imgname varchar2(100) not null,     -- 원래이미지명
+    file_imgname  varchar2(100)  not null,       -- 파일이미지명
+    filelength	number,							-- 파일크기
+    constraint pdCode foreign key(pdCode) references pd_tbl(pdCode) -- 상품코드
+ );
+--상품 + 상품이미지 테이블
+ create table tbl_product (
+    pdCode number(30)  primary key,     -- 상품코드
+    pdNum  number   primary key,        -- 순번
+    file_imgname  varchar2(100)  not null,       -- 파일이미지명 
+    origin_imgname varchar2(100) not null,     -- 원래이미지명
+    filelength 
+        
  );
  -- 시퀀스
- create sequence seq_pd_img_num ; --순번
- create sequence seq_pd_code_num; --상품코드   
+ create sequence seq_imgnum ; --순번
+ create sequence seq_codenum; --상품코드   
  
  mvc 비슷하게 개념...
    
@@ -58,18 +71,13 @@
       ㄴ ProductDTO.java
       ㄴ productDAO.java
       ㄴ productServlet.java
+      ㄴ UploadServlet_02.java
       
    product 폴더
-      ㄴ ex04_list.jsp			list.ss
-      ㄴ ex04_write.jsp			write.ss
-      ㄴ ex04_update.jsp		update.ss
-      
-     
-     
-     
-     
-     
-     
+      ㄴ ex01_list.jsp			list.ss
+      ㄴ ex01_write.jsp			write.ss
+      ㄴ ex01_update.jsp		update.ss
+    
      [각 팀의 과제]
     상품코드
     상품명

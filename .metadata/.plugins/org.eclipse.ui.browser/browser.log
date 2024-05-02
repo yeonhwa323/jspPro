@@ -193,3 +193,24 @@
 4월 30, 2024 13:58:23.994 [4816:14292:0430/135823.993:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
 4월 30, 2024 14:10:45.971 Created TensorFlow Lite XNNPACK delegate for CPU.
 4월 30, 2024 14:13:21.845 Created TensorFlow Lite XNNPACK delegate for CPU.
+
+5월 02, 2024 08:29:25.262 NEW SESSION
+5월 02, 2024 08:29:25.262 Created TensorFlow Lite XNNPACK delegate for CPU.
+5월 02, 2024 09:16:41.193 [14912:19532:0502/091641.193:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+5월 02, 2024 09:40:40.105 [14912:19532:0502/094040.104:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+5월 02, 2024 10:50:27.359 [14912:19532:0502/105027.359:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+5월 02, 2024 10:51:18.35 Created TensorFlow Lite XNNPACK delegate for CPU.
+5월 02, 2024 11:09:11.731 [19348:8260:0502/110911.731:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+5월 02, 2024 11:09:11.788 [19348:8260:0502/110911.788:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint (unset) for first_image_paint 0.154 s
+5월 02, 2024 11:47:54.30 Created TensorFlow Lite XNNPACK delegate for CPU.
+5월 02, 2024 12:41:50.326 [7812:8316:0502/124150.326:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+5월 02, 2024 12:47:51.784 [7812:8316:0502/124751.783:ERROR:interface_endpoint_client.cc(707)] Message 5 rejected by interface blink.mojom.WidgetHost
+5월 02, 2024 13:19:55.30 [7812:10912:0502/131955.030:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+5월 02, 2024 14:01:51.85 [7812:10912:0502/140151.042:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+5월 02, 2024 14:03:04.212 [7812:8316:0502/140304.211:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+5월 02, 2024 14:14:08.437 [7812:8316:0502/141408.436:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+5월 02, 2024 14:16:55.866 [7812:8316:0502/141655.866:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+5월 02, 2024 14:24:33.611 [7812:8316:0502/142433.610:ERROR:interface_endpoint_client.cc(707)] Message 5 rejected by interface blink.mojom.WidgetHost
+5월 02, 2024 14:45:53.165 [7812:8316:0502/144553.165:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+5월 02, 2024 15:39:18.571 [7812:10912:0502/153918.571:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+5월 02, 2024 16:10:44.982 [7812:10912:0502/161044.981:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106

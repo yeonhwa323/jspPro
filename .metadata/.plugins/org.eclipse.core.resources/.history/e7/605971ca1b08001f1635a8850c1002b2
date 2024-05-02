@@ -1,0 +1,6 @@
+# requestURL=commandHandler mapping
+#/board/list.do=days10.replyboard.command.ListHandler
+#/board/write.do=days10.replyboard.command.WriteHandler
+#/board/view.do=days10.replyboard.command.ViewHandler
+#/board/edit.do=days10.replyboard.command.EditHandler
+#/board/delete.do=days10.replyboard.command.DeleteHandler
