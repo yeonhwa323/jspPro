@@ -1,6 +1,0 @@
-package days09;
-
-public class FileTestDTO {
-	
-	// table column name == file name
-}

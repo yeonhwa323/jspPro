@@ -1,8 +1,0 @@
-package days06.board.copy;
-
-public class Snippet {
-	public static void main(String[] args) {
-		days06.mvc.controller
-	}
-}
-

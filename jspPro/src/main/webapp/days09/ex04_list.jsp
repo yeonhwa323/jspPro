@@ -11,10 +11,10 @@
 <link rel="stylesheet" href="/jspPro/resources/cdn-main/example.css">
 <script src="/jspPro/resources/cdn-main/example.js"></script>
 <style>
- span.material-symbols-outlined{
-    vertical-align: text-bottom;
- }
-</style>
+  span.material-symbols-outlined{
+     vertical-align: text-bottom;
+  }
+ </style>
 </head>
 <body>
 <header>

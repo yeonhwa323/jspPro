@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%-- <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
@@ -35,7 +35,7 @@
       
       [ empty 연산자 정리 ]
       값 null		true
-      <%-- ${ empty list } --%>
+      ${ empty list }
       값 ""			true
       값 0			true
       Collection	true
@@ -73,7 +73,7 @@
   ${ 100 == 10 } <br>			<!-- false -->
   ${ 100 eq 10 } <br>			<!-- false -->
   ${ 100 != 10 } <br>			<!-- true -->
-  <%-- ${ 100 ne 10 } <br> --%>	
+  ${ 100 ne 10 } <br>	
     
   <hr>
   
@@ -100,7 +100,7 @@
   ${ "10" + 3 } <br> <!-- 13 -->
   ${ null + 3 } <br> <!-- null일 경우 0으로 처리된다. 결과 : 3 --> 
   <!-- java + 덧셈연산자, 문자열 연결 연산자 -->
-  <%-- ${ "한글" + 3 } <br> --%> <!-- NumberFormatException: For input string: "한글" --> 
+  ${ "한글" + 3 } <br> <!-- NumberFormatException: For input string: "한글" --> 
   
   <hr>
 </div>
@@ -118,3 +118,4 @@
 
 
 
+ --%>
